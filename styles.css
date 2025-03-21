@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-    background-color: black;
+    background-color: #141414;
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,7 +12,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: black;
 }
 
 .logo {
@@ -24,39 +24,32 @@ body {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
 
 .icons i {
     color: white;
-    margin: 0 10px;
+    margin-left: 15px;
     cursor: pointer;
 }
 
 .featured {
-    background: url('https://via.placeholder.com/1280x720') center/cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    background: black;
     padding: 50px;
+    text-align: center;
 }
 
-.featured-content {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
+.featured-content h1 {
+    font-size: 36px;
 }
 
 .movies {
     padding: 20px;
-    position: relative;
 }
 
 .carousel-container {
@@ -67,10 +60,9 @@ nav ul li a {
 
 .movie-list {
     display: flex;
-    gap: 10px;
-    overflow-x: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
+    overflow: hidden;
+    gap: 15px;
+    width: 80%;
 }
 
 .movie-item {
@@ -91,17 +83,35 @@ nav ul li a {
     width: 150px;
 }
 
+.preview {
+    display: none;
+    width: 150px;
+    height: auto;
+}
+
+.movie-item:hover img {
+    display: none;
+}
+
+.movie-item:hover .preview {
+    display: block;
+}
+
 .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 10;
+    font-size: 24px;
 }
 
-.prev { left: 0; }
-.next { right: 0; }
+.prev {
+    position: absolute;
+    left: 0;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+}
