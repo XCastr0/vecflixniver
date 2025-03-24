@@ -39,7 +39,7 @@ nav ul li a {
 }
 
 .featured {
-    background: black;
+    bac: url(novos/vec.MP4);
     padding: 50px;
     text-align: center;
 }
@@ -50,21 +50,30 @@ nav ul li a {
 
 .movies {
     padding: 20px;
+    
 }
 
 .carousel-container {
     display: flex;
     align-items: center;
     position: relative;
+    width: 100%; /* Garante que o carrossel ocupe toda a tela */
+    overflow: hidden; /* Impede que imagens vazem para fora */
 }
 
 .movie-list {
     display: flex;
-    overflow: hidden;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    scroll-behavior: smooth; /* Suaviza a rolagem */
+    white-space: nowrap; /* Mantém os itens em uma linha */
     gap: 15px;
-    width: 80%;
+    width: 100%; /* Garante que a lista de filmes use toda a largura do contêiner */
 }
 
+/* Para esconder a barra de rolagem no Chrome */
+.movie-list::-webkit-scrollbar {
+    display: none;
+}
 .movie-item {
     position: relative;
     font-size: 48px;
@@ -84,17 +93,22 @@ nav ul li a {
 }
 
 .preview {
-    display: none;
+    display: block; /* Exibir o vídeo sempre */
+    opacity: 0; /* Inicialmente invisível */
     width: 150px;
     height: auto;
+    transition: opacity 0.3s ease-in-out; /* Transição suave */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .movie-item:hover img {
-    display: none;
+    opacity: 0; /* Em vez de display: none, isso evita problemas na transição */
 }
 
 .movie-item:hover .preview {
-    display: block;
+    opacity: 1;
 }
 
 .prev, .next {
@@ -104,14 +118,16 @@ nav ul li a {
     padding: 10px;
     cursor: pointer;
     font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
 }
 
 .prev {
-    position: absolute;
-    left: 0;
+    left: 10px;
 }
 
 .next {
-    position: absolute;
-    right: 0;
+    right: 10px;
 }
