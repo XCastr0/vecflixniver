@@ -39,14 +39,32 @@ nav ul li a {
 }
 
 .featured {
-    bac: url(novos/vec.MP4);
-    padding: 50px;
+    position: relative;
+    width: 100%;
+    height: 600px; /* Ajuste conforme necessário */
+    overflow: hidden;
+}
+.featured video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+.featured-content  {
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    color: white;
+    width: 100%;
 }
 
-.featured-content h1 {
-    font-size: 36px;
-}
 
 .movies {
     padding: 20px;
