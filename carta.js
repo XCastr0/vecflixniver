@@ -138,22 +138,24 @@ function envelop_transition() {
   document.querySelector(".js-up-paper").classList.remove("cursor");
 }
 
-//-> Function that allows cut the sticker.
+//-> Function that allows cutting the sticker.
 function sticker() {
   gsap.set(".js-sticker", { width: "20%", left: "-80%" });
   document.body.classList.remove("scissors");
   document.querySelector(".js-sticker").removeEventListener("click", sticker);
-  document
-    .querySelector(".js-up-paper")
-    .addEventListener("click", envelop_transition);
+  document.querySelector(".js-up-paper").addEventListener("click", envelop_transition);
   document.querySelector(".js-up-paper").classList.add("cursor");
+  document.body.classList.add("scissors"); // Re-add scissors cursor after cutting.
 }
 
+// Automatically set the cursor to scissors when the page loads
+document.body.classList.add("scissors");
+
 document.querySelector(".js-sticker").addEventListener("click", sticker);
+
+// Make sure clicking on the envelope opens it (as before)
+document.querySelector(".js-up-paper").addEventListener("click", envelop_transition);
 
 window.onresize = function (event) {
   recize_notes();
 };
-
-
-  
