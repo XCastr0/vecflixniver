@@ -1,163 +1,41 @@
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>User</title>
+    <link rel="stylesheet" href="login.css"> <!-- Aqui você faz a ligação com o seu arquivo CSS -->
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">VECTFLIX</div>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Séries</a></li>
-                <li><a href="#">Filmes</a></li>
-                <li><a href="#">Bombando</a></li>
-                <li><a href="#">Minha Lista</a></li>
-                <li><a href="#">Navegar por Idiomas</a></li>
-            </ul>
-        </nav>
-        <div class="icons">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-bell"></i>
-            <i class="fas fa-user-circle"></i>
-        </div>
-    </header>
-    
-    <main>
-        <section class="featured">
-            <video autoplay loop muted playsinline>
-                <source src="novos/vec.MP4" type="video/mp4">
-                
-            </video>
-            <div class="featured-content">
-                
-                <h1>Feliz Seu dia, te amo meu amor❤️</h1>
-                <p>Você é a mais tchuca!</p>
-                <a href="carta.html">
-                    <button>Clique aqui</button>
-                  </a>
-                  
-            </div>
-        </section>
-        
-        <section class="movies">
-            <h2>Vec versão Kids</h2>
-            <div class="carousel-container">
-                <button class="prev">&#10094;</button>
-                <div class="movie-list">
-                    <div class="movie-item">1
-                        <video class="preview" src="novos/veckids.JPEG" muted loop></video>
-                        <img src="novos/veckids.JPEG" alt="Filme 1">
-                    </div>
-                    <div class="movie-item">2
-                        <video class="preview" src="video2.mp4" muted loop></video>
-                        <img src="novos/veckids10.JPEG" alt="Filme 2">
-                    </div>
-                    <div class="movie-item">3
-                        <video class="preview" src="video3.mp4" muted loop></video>
-                        <img src="novos/veckids11.JPEG" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">4
-                        <video class="preview" src="video3.mp4" muted loop></video>
-                        <img src="novos/veckids12.JPEG" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">5
-                        <video class="preview" src="video3.mp4" muted loop></video>
-                        <img src="novos/veckids2.JPEG" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">6
-                        <video class="preview" src="video3.mp4" muted loop></video>
-                        <img src="novos/veckids3.JPEG" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">7
-                        <video class="preview" src="video3.mp4" muted loop></video>
-                        <img src="novos/veckids4.JPEG" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">8
-                        <video class="preview" src="video3.mp4" muted loop></video>
-                        <img src="novos/veckids5.JPEG" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">9
-                        <video class="preview" src="video3.mp4" muted loop></video>
-                        <img src="novos/veckids6.JPEG" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">10
-                        <video class="preview" src="video3.mp4" muted loop></video>
-                        <img src="novos/veckids7.JPEG" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">11
-                        <video class="preview" src="video3.mp4" muted loop></video>
-                        <img src="novos/veckids8.JPEG" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">12
-                        <video class="preview" src="video3.mp4" muted loop></video>
-                        <img src="novos/veckids9.JPEG" alt="Filme 3">
-                    </div>
-              
-                </div>
-                <button class="next">&#10095;</button>
-            </div>
-        </section>
-        <section class="movies">
-            <h2>Vec e lubi</h2>
-            <div class="carousel-container">
-                <button class="prev">&#10094;</button>
-                <div class="movie-list">
-                    <div class="movie-item">1
-                        <video class="preview" src="novos/vecelubi10.MP4" muted loop></video>
-                        <img src="novos/Captura de tela 2025-03-25 155002.png" alt="Filme 1">
-                    </div>
-                    <div class="movie-item">2
-                        <video class="preview" src="novos/vecelubi (2).MP4" muted loop></video>
-                        <img src="novos/print2.png" alt="Filme 2">
-                    </div>
-                    <div class="movie-item">3
-                        <video class="preview" src="novos/vecelubi.MP4" muted loop></video>
-                        <img src="novos/print3.png" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">4
-                        <video class="preview" src="novos/vecelubi11.MP4" muted loop></video>
-                        <img src="novos/print4.png" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">5
-                        <video class="preview" src="novos/vecelubi14.JPEG" muted loop></video>
-                        <img src="novos/vecelubi14.JPEG" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">6
-                        <video class="preview" src="novos/vecelubi12.MP4" muted loop></video>
-                        <img src="novos/print5.png" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">7
-                        <video class="preview" src="novos/vecelubi15.MP4" muted loop></video>
-                        <img src="novos/print6.png" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">8
-                        <video class="preview" src="novos/vecelubi18.MP4" muted loop></video>
-                        <img src="novos/print7.png" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">9
-                        <video class="preview" src="novos/vecelubi19.MP4" muted loop></video>
-                        <img src="novos/print8.png" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">10
-                        <video class="preview" src="novos/vecelubi20.MP4" muted loop></video>
-                        <img src="novos/print9.png" alt="Filme 3">
-                    </div>
-                    <div class="movie-item">11
-                        <video class="preview" src="novos/vecelubi3.MP4" muted loop></video>
-                        <img src="novos/print10.png" alt="Filme 3">
-                    </div>
+    <div class="logo"></div>
 
-              
+    <div class="wrapper">
+        <h1>Quem é o usuário?</h1>
+        <div class="profile-wrap">
+            <!-- Aqui está o link para o redirecionamento -->
+            <a href="inicio.html" class="profile-link">
+                <div class="profile">
+                    <div class="profile-icon profile1">
+                        <img src="novos/vecgrande.JPEG" alt="Foto do Usuário" width="150" height="150"">
+                    </div>
+                            <g id="Page-1" fill="none" fill-rule="evenodd">
+                                <g id="Account-Holder" fill="">
+                                    <g id="profile1">
+                                        <path d="M61 155l7-8h67c6.67 4 10 6.67 10 8 0 2 0-22-4-24s-67-2-78 1c-1.33 5.33-2 13-2 23z" id="mustache"/>
+                                        <path d="M94 77c-8.67 30-24.67 45-48 45-31 0-34-30-34-46 0-10.67 10-17 30-19h110c24.67 0 38 6 40 18 0 30-11.67 45.67-35 47-38 2-45-44-46-45-.67-.67-6.33-.67-17 0zM81 63c5.33 4.67 8 7.67 8 9h26c0-2 2.67-5 8-9H81z" id="sunglasses"/>
+                                        <path d="M111 35c1 5 4 13 4 14s45-13 70-2c-7-10-26-13-32-13-4 0-16 1-36 3-3.33-2-5.33-2.67-6-2z" id="right-brow"/>
+                                        <path d="M89 38h-7c-12.67-6.67-24.33-10-35-10-10.67 0-20.67 3-30 9 9.33-1.33 16.33-1.67 21-1 9 1 31 7 44 15 3.33-1.33 5.67-5.67 7-13z" id="left-brow"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="profile-name">
+                        Vitória
+                    </div>
                 </div>
-                <button class="next">&#10095;</button>
-            </div>
-        </section>
-    </main>
-    
-    <script src="script.js"></script>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
